@@ -12,4 +12,5 @@ async def async_generator() -> typing.Generator[float, None, None]:
 
 
 async def async_comprehension() -> typing.Generator[float, None, None]:
+    '''then return the 10 random numbers.'''
     return [num async for num in async_generator()][:10]
