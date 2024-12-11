@@ -11,5 +11,5 @@ async def async_generator() -> typing.Generator[float, None, None]:
         yield random.uniform(0, 10)
 
 
-async def async_comprehension():
+async def async_comprehension() -> typing.Generator[float, None, None]:
     return [num async for num in async_generator()][:10]
